@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Virtual Valentine — Einstain &amp; Asiyo</title>
+    <meta name="description" content="A luxury digital experience celebrating friendship and connection">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&family=Italiana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page-loader" id="pageLoader">
+    <div class="loader-ring"></div>
+    <p class="loader-text">Preparing your experience…</p>
+</div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<button class="music-btn" id="musicBtn" aria-label="Toggle ambient music">
+    <span class="music-icon" id="musicIcon">♪</span>
+    <span class="music-label">Ambience</span>
+</button>
+
+<nav class="luxury-nav" id="luxuryNav">
+    <div class="nav-logo">A N N E T T E       <h4> V . V</h4></div>
+    <div class="nav-links" id="navLinks">
+        <a href="#hero"     class="nav-link">Home</a>
+        <a href="#story"    class="nav-link">Story</a>
+        <a href="#bouquet"  class="nav-link">Bouquet</a>
+        <a href="#card"     class="nav-link">Card</a>
+        <a href="#poem"     class="nav-link">Poem</a>
+        <a href="#memories" class="nav-link">Journey</a>
+        <a href="#capsule"  class="nav-link">Reply</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">&times;</button>
+    <a href="#hero"     class="mobile-link">Home</a>
+    <a href="#story"    class="mobile-link">Story</a>
+    <a href="#bouquet"  class="mobile-link">Bouquet</a>
+    <a href="#card"     class="mobile-link">Card</a>
+    <a href="#poem"     class="mobile-link">Poem</a>
+    <a href="#memories" class="mobile-link">Journey</a>
+    <a href="#capsule"  class="mobile-link">Reply</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" class="hero-section">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-pretitle reveal-fade" style="--d:.2s">To someone extraordinary</div>
+        <h1 class="hero-title">
+            <span class="title-line gold reveal-up" style="--d:.5s">Asiyo</span>
+            <span class="title-line white reveal-up" style="--d:.75s">Annette</span>
+        </h1>
+        <div class="hero-subtitle reveal-fade" style="--d:1s" id="heroSubtitle">Our Virtual Valentine</div>
+        <div class="affirmations-box reveal-fade" style="--d:1.2s">
+            <span class="affirmation-item active" id="affirmItem">Someone who makes yes feel like poetry</span>
+        </div>
+        <p class="hero-description reveal-fade" style="--d:1.4s">
+            In a world of fleeting connections, you chose to say yes.<br>
+            This is my gratitude, transformed into something timeless.
+        </p>
+        <div class="scroll-indicator reveal-fade" style="--d:1.6s">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </div>
+    <div class="heartbeat-counter reveal-fade" style="--d:1.8s">
+        <div class="hb-pulse"></div>
+        <div class="hb-text">
+            <span class="hb-num" id="heartbeatNum">000,000</span>
+            <span class="hb-label">seconds since you said yes ♡</span>
+        </div>
+    </div>
+</section>
+
+<!-- STORY -->
+<section id="story" class="gratitude-section">
+    <div class="container">
+        <div class="section-header" data-scroll-reveal>
+            <span class="section-number">01</span>
+            <h2 class="section-title">Thank You</h2>
+        </div>
+        <div class="gratitude-content">
+            <div class="gratitude-text" data-scroll-reveal>
+                <p class="large-text">
+                    When I asked if you'd be my virtual valentine, I expected hesitation.
+                    Perhaps a polite decline. What I received instead was grace. THAT WAS CRAZY FOR ME 
+                </p>
+                <p>
+                    You said yes with a warmth that reminded me why genuine connection
+                    matters in this digital age. It wasn't just acceptance, it was an
+                    affirmation that thoughtfulness still holds value, that friendship
+                    can transcend screens and distance.
+                </p>
+                <p>
+                    This website isn't just a gesture. It's a testament to what happens
+                    when someone chooses to see beauty in an unconventional request,
+                    when someone meets vulnerability with kindness.
+                </p>
+            </div>
+            <div class="gratitude-visual" data-scroll-reveal>
+                <div class="floating-frame" id="floatingFrame">
+                    <div class="fc tl"></div><div class="fc tr"></div>
+                    <div class="fc bl"></div><div class="fc br"></div>
+                    <div class="frame-content">
+                        <div class="quote-mark">"</div>
+                        <p class="quote-text">
+                            Thank you for being the kind of person who says yes to
+                            unexpected moments of connection.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BOUQUET -->
+<section id="bouquet" class="bouquet-section">
+    <div class="container">
+        <div class="section-header center" data-scroll-reveal>
+            <span class="section-number">02</span>
+            <h2 class="section-title">Your Bouquet</h2>
+            <p class="section-subtitle">For Asiyo Annette</p>
+        </div>
+        <div class="bouquet-container" data-scroll-reveal>
+            <div class="bouquet-3d" id="bouquet3d">
+                <div class="bouquet-center">
+                    <div class="center-text">
+                        <div class="recipient-name">ASIYO</div>
+                        <div class="recipient-detail">Virtual Valentine 2026</div>
+                        <div class="message-badge">With deepest appreciation</div>
+                    </div>
+                </div>
+            </div>
+            <p class="bouquet-caption">
+                Traditional flowers fade. This bouquet is eternal, much like the
+                friendship I hope we'll continue to build.  "DAMN HAVE BECOME A PHILOSOPHER"
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CARD -->
+<section id="card" class="card-section">
+    <div class="container">
+        <div class="section-header center" data-scroll-reveal>
+            <span class="section-number">03</span>
+            <h2 class="section-title">Your Valentine's Card</h2>
+        </div>
+        <div class="card-container" data-scroll-reveal>
+            <div class="luxury-card" id="valentineCard">
+                <div class="card-front">
+                    <div class="card-ornament top"></div>
+                    <div class="card-content-front">
+                        <div class="card-monogram">A</div>
+                        <div class="card-title-front">Virtual Valentine</div>
+                        <div class="card-year">MMXXVI</div>
+                        <p class="card-instruction" id="cardInstruction">Tap to open</p>
+                    </div>
+                    <div class="card-ornament bottom"></div>
+                </div>
+                <div class="card-back">
+                    <div class="card-content-back">
+                        <p class="card-message salutation">Dear Asiyo,</p>
+                        <p class="card-message">
+                            In the quiet spaces between our conversations, I find myself grateful.
+                            Not for grand gestures or elaborate promises, but for something simpler
+                            and more profound: your presence.
+                        </p>
+                        <p class="card-message">
+                            You bring a rare quality to our friendship, authenticity wrapped in
+                            elegance, depth delivered with lightness. You make the virtual feel
+                            remarkably real.
+                        </p>
+                        <p class="card-message">
+                            This Valentine's Day, I wanted to create something worthy of that reality.
+                            Something that exists in the space where technology meets thoughtfulness,
+                            where distance dissolves into connection.
+                        </p>
+                        <p class="card-signature">
+                            With admiration and friendship,<br>
+                            <span class="signature">Einstain Eddy</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="card-hint" data-scroll-reveal>Tap the card to reveal your personal message</p>
+    </div>
+</section>
+
+<!-- POEM -->
+<section id="poem" class="poem-section">
+    <div class="container">
+        <div class="section-header center" data-scroll-reveal>
+            <span class="section-number">04</span>
+            <h2 class="section-title">Written For You</h2>
+            <p class="section-subtitle">A poem that reveals itself, one line at a time</p>
+        </div>
+        <div class="poem-stage" data-scroll-reveal id="poemStage">
+            <div class="poem-lines" id="poemLines">
+                <h3>MY FANTASY WORDS</h3>
+                            <p class="poem-line" data-i="0">You couldn’t get any better, you’re heaven in my eyes,</p>
+                            <p class="poem-line" data-i="1">Your love feels like candy, sweet in every sigh.</p>
+                            <p class="poem-line" data-i="2">My heart gets impatient whenever you’re away,</p>
+                            <p class="poem-line" data-i="3">Waiting for the moment I can call you my day.</p>
+
+                            <p class="poem-line stanza-break" data-i="4">Don’t make this love feel broken or unclear,</p>
+                            <p class="poem-line" data-i="5">When you speak, it’s a reflex pulling me near.</p>
+                            <p class="poem-line" data-i="6">I know you love your games, but this is something true,</p>
+                            <p class="poem-line" data-i="7">No recess in my feelings  it’s only you.</p>
+
+                            <p class="poem-line stanza-break" data-i="8">Around the world, they know my name, but you’re my pride,</p>
+                            <p class="poem-line" data-i="9">I’d book the sky just to have you by my side.</p>
+                            <p class="poem-line" data-i="10">Baby, don’t lie, I see what you’ve been through…</p>
+                            <p class="poem-line" data-i="11">You ain’t different  you’re my dream come true.</p>
+
+                <p class="poem-line poem-attribution" data-i="9"> Written for Asiyo, February 2026</p>
+            </div>
+            <div class="poem-bar"><div class="poem-fill" id="poemFill"></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="memories" class="timeline-section">
+    <div class="container">
+        <div class="section-header" data-scroll-reveal>
+            <span class="section-number">05</span>
+            <h2 class="section-title">Our Journey</h2>
+            <p class="section-subtitle">Building something meaningful, one moment at a time</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item" data-scroll-reveal>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">The Beginning</h3>
+                    <p class="timeline-text">Every meaningful connection starts somewhere. Ours began with curiosity, evolved through conversation, and deepened with understanding.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-scroll-reveal>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Genuine Connection</h3>
+                    <p class="timeline-text">In a digital world, authentic friendship is rare. You've shown me that distance is merely physical — connection transcends coordinates.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-scroll-reveal>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">The Question</h3>
+                    <p class="timeline-text">When I asked you to be my virtual valentine, I was asking for more than a yes. I was asking if you believed in the beauty of unconventional gestures.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-scroll-reveal>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Your Answer</h3>
+                    <p class="timeline-text">You said yes. Not with hesitation, but with grace. That single word affirmed everything I value about our friendship.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-scroll-reveal>
+                <div class="timeline-marker golden"></div>
+                <div class="timeline-content golden-content">
+                    <h3 class="timeline-title">Forward Together</h3>
+                    <p class="timeline-text">This isn't an ending it's a continuation. A promise to value what we're building, to honor your presence, and to meet your thoughtfulness with my own.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MESSAGE CAPSULE -->
+<section id="capsule" class="capsule-section">
+    <div class="container">
+        <div class="section-header center" data-scroll-reveal>
+            <span class="section-number">06</span>
+            <h2 class="section-title">Your Word Back</h2>
+            <p class="section-subtitle">One sentence. Sealed here. Yours forever.</p>
+        </div>
+        <div class="capsule-wrap" data-scroll-reveal>
+            <div class="capsule-card" id="capsuleCard">
+                <div class="capsule-state" id="stateSealed">
+                    <div class="wax-seal"><div class="wax-inner">A</div></div>
+                    <p class="capsule-prompt">This space was left blank intentionally.<br>It belongs to <em>your</em> voice.</p>
+                    <button class="capsule-btn gold-btn" id="openCapsuleBtn">Open &amp; Write</button>
+                </div>
+                <div class="capsule-state hidden" id="stateWrite">
+                    <p class="capsule-instruction">What would you like to say to Einstain?</p>
+                    <textarea class="capsule-textarea" id="capsuleText" maxlength="220" placeholder="Write one sentence…"></textarea>
+                    <div class="capsule-meta">
+                        <span class="char-count"><span id="charCount">0</span> / 220</span>
+                        <button class="capsule-btn gold-btn" id="sealCapsuleBtn">Seal It ✦</button>
+                    </div>
+                </div>
+                <div class="capsule-state hidden" id="stateSaved">
+                    <div class="wax-seal small"><div class="wax-inner">A</div></div>
+                    <p class="capsule-saved-label">Your words, sealed here forever:</p>
+                    <p class="capsule-saved-text" id="capsuleSavedText"></p>
+                    <button class="capsule-btn ghost-btn" id="editCapsuleBtn">Change my word</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing-section">
+    <div class="container">
+        <div class="closing-content" data-scroll-reveal>
+            <p class="closing-text">Some gestures can't be bought. Some moments can't be replicated. Some friendships can't be quantified.</p>
+            <p class="closing-text large">This is one of them.</p>
+            <div class="closing-sig">
+                <div class="sig-line"></div>
+                <p class="sig-text">For Asiyo, with genuine appreciation</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EASTER EGG MODAL -->
+<div class="easter-modal" id="easterModal">
+    <div class="easter-content">
+        <button class="easter-close" id="easterClose">&times;</button>
+        <div class="easter-icon">🌹</div>
+        <h3>You found the secret!</h3>
+        <p>Your curiosity is one of the things I admire most. Never lose that sense of wonder, that willingness to explore beyond the obvious.</p>
+        <p class="easter-hint">P.S.  There are three more hidden surprises on this page. Keep looking.</p>
+    </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- FOOTER -->
+<footer class="luxury-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-logo">V · V</div>
+            <p class="footer-message">Made with ♡, intention, and thoughts of you</p>
+            <p>YOU (Travis Scott ft Don Toliver)  For you</p>
+            <div class="footer-divider"></div>
+            <div class="footer-credits">
+                <span>Einstain Eddy</span>
+                <span class="dot">•</span>
+                <span>February 2026</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
